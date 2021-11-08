@@ -30,6 +30,7 @@ const switchPage = (page) => {
     head.innerHTML = 'Grades View';
     for (const grade of gradesArr) {
       const div = document.createElement('div');
+      div.style.fontSize = '20px';
       div.innerHTML = `${grade.student}: ${grade.grade}`;
       grades.appendChild(div);
     }
